@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3567CAB71E4C6F5A00DA28D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567CAB61E4C6F5A00DA28D8 /* AppDelegate.swift */; };
-		3567CAB91E4C6F5A00DA28D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567CAB81E4C6F5A00DA28D8 /* ViewController.swift */; };
+		3567CAB91E4C6F5A00DA28D8 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567CAB81E4C6F5A00DA28D8 /* MainController.swift */; };
 		3567CABC1E4C6F5A00DA28D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3567CABA1E4C6F5A00DA28D8 /* Main.storyboard */; };
 		3567CABE1E4C6F5A00DA28D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3567CABD1E4C6F5A00DA28D8 /* Assets.xcassets */; };
 		3567CAC11E4C6F5A00DA28D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3567CABF1E4C6F5A00DA28D8 /* LaunchScreen.storyboard */; };
 		3567CACC1E4C6F5B00DA28D8 /* todoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567CACB1E4C6F5B00DA28D8 /* todoListTests.swift */; };
 		3567CAD71E4C6F5B00DA28D8 /* todoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567CAD61E4C6F5B00DA28D8 /* todoListUITests.swift */; };
+		3567CAEA1E4C78F600DA28D8 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3567CAE91E4C78F600DA28D8 /* SnapKit.framework */; };
+		3567CAEB1E4C78F600DA28D8 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3567CAE91E4C78F600DA28D8 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3567CAF01E4DC95F00DA28D8 /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3567CAEF1E4DC95F00DA28D8 /* PlayPauseButton.swift */; };
+		35A739DD1E51B868000CF1FD /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A739DC1E51B868000CF1FD /* VideoPlayer.swift */; };
+		35A739E11E52B594000CF1FD /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A739E01E52B594000CF1FD /* VideoController.swift */; };
+		35A739E31E52BC50000CF1FD /* MainListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A739E21E52BC50000CF1FD /* MainListController.swift */; };
+		35A739E51E530B71000CF1FD /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A739E41E530B71000CF1FD /* ProfileController.swift */; };
+		35A739E71E543B01000CF1FD /* FullScreenPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A739E61E543B01000CF1FD /* FullScreenPlayer.swift */; };
+		35A739EC1E54619C000CF1FD /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A739EB1E54619C000CF1FD /* SwiftyJSON.framework */; };
+		35A739ED1E54619C000CF1FD /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35A739EB1E54619C000CF1FD /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		35A739EF1E546544000CF1FD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35A739EE1E546544000CF1FD /* Alamofire.framework */; };
+		35A739F01E546544000CF1FD /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 35A739EE1E546544000CF1FD /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +45,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3567CAEC1E4C78F600DA28D8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3567CAEB1E4C78F600DA28D8 /* SnapKit.framework in Embed Frameworks */,
+				35A739F01E546544000CF1FD /* Alamofire.framework in Embed Frameworks */,
+				35A739ED1E54619C000CF1FD /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3567CAB31E4C6F5A00DA28D8 /* todoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3567CAB61E4C6F5A00DA28D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3567CAB81E4C6F5A00DA28D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3567CAB81E4C6F5A00DA28D8 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		3567CABB1E4C6F5A00DA28D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3567CABD1E4C6F5A00DA28D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3567CAC01E4C6F5A00DA28D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +75,16 @@
 		3567CAD21E4C6F5B00DA28D8 /* todoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = todoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3567CAD61E4C6F5B00DA28D8 /* todoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoListUITests.swift; sourceTree = "<group>"; };
 		3567CAD81E4C6F5B00DA28D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3567CAE71E4C715300DA28D8 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		3567CAE91E4C78F600DA28D8 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		3567CAEF1E4DC95F00DA28D8 /* PlayPauseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayPauseButton.swift; sourceTree = "<group>"; };
+		35A739DC1E51B868000CF1FD /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		35A739E01E52B594000CF1FD /* VideoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
+		35A739E21E52BC50000CF1FD /* MainListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainListController.swift; sourceTree = "<group>"; };
+		35A739E41E530B71000CF1FD /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		35A739E61E543B01000CF1FD /* FullScreenPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPlayer.swift; sourceTree = "<group>"; };
+		35A739EB1E54619C000CF1FD /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		35A739EE1E546544000CF1FD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3567CAEA1E4C78F600DA28D8 /* SnapKit.framework in Frameworks */,
+				35A739EF1E546544000CF1FD /* Alamofire.framework in Frameworks */,
+				35A739EC1E54619C000CF1FD /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +118,14 @@
 		3567CAAA1E4C6F5A00DA28D8 = {
 			isa = PBXGroup;
 			children = (
+				35A739EE1E546544000CF1FD /* Alamofire.framework */,
+				35A739EB1E54619C000CF1FD /* SwiftyJSON.framework */,
+				3567CAE91E4C78F600DA28D8 /* SnapKit.framework */,
 				3567CAB51E4C6F5A00DA28D8 /* todoList */,
 				3567CACA1E4C6F5B00DA28D8 /* todoListTests */,
 				3567CAD51E4C6F5B00DA28D8 /* todoListUITests */,
 				3567CAB41E4C6F5A00DA28D8 /* Products */,
+				3567CAE41E4C703300DA28D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +143,17 @@
 			isa = PBXGroup;
 			children = (
 				3567CAB61E4C6F5A00DA28D8 /* AppDelegate.swift */,
-				3567CAB81E4C6F5A00DA28D8 /* ViewController.swift */,
+				3567CAB81E4C6F5A00DA28D8 /* MainController.swift */,
+				35A739E01E52B594000CF1FD /* VideoController.swift */,
 				3567CABA1E4C6F5A00DA28D8 /* Main.storyboard */,
+				35A739E61E543B01000CF1FD /* FullScreenPlayer.swift */,
+				35A739E21E52BC50000CF1FD /* MainListController.swift */,
 				3567CABD1E4C6F5A00DA28D8 /* Assets.xcassets */,
 				3567CABF1E4C6F5A00DA28D8 /* LaunchScreen.storyboard */,
 				3567CAC21E4C6F5A00DA28D8 /* Info.plist */,
+				3567CAEF1E4DC95F00DA28D8 /* PlayPauseButton.swift */,
+				35A739E41E530B71000CF1FD /* ProfileController.swift */,
+				35A739DC1E51B868000CF1FD /* VideoPlayer.swift */,
 			);
 			path = todoList;
 			sourceTree = "<group>";
@@ -125,6 +176,14 @@
 			path = todoListUITests;
 			sourceTree = "<group>";
 		};
+		3567CAE41E4C703300DA28D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3567CAE71E4C715300DA28D8 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +194,7 @@
 				3567CAAF1E4C6F5A00DA28D8 /* Sources */,
 				3567CAB01E4C6F5A00DA28D8 /* Frameworks */,
 				3567CAB11E4C6F5A00DA28D8 /* Resources */,
+				3567CAEC1E4C78F600DA28D8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,8 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3567CAB91E4C6F5A00DA28D8 /* ViewController.swift in Sources */,
+				35A739E51E530B71000CF1FD /* ProfileController.swift in Sources */,
+				35A739E71E543B01000CF1FD /* FullScreenPlayer.swift in Sources */,
+				35A739DD1E51B868000CF1FD /* VideoPlayer.swift in Sources */,
+				3567CAB91E4C6F5A00DA28D8 /* MainController.swift in Sources */,
+				35A739E31E52BC50000CF1FD /* MainListController.swift in Sources */,
+				3567CAF01E4DC95F00DA28D8 /* PlayPauseButton.swift in Sources */,
 				3567CAB71E4C6F5A00DA28D8 /* AppDelegate.swift in Sources */,
+				35A739E11E52B594000CF1FD /* VideoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,8 +480,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V27S6K9Z6Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Alamofire.framework",
+				);
 				INFOPLIST_FILE = todoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/SnapKit.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileonux.todoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -427,8 +502,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V27S6K9Z6Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/Alamofire.framework",
+				);
 				INFOPLIST_FILE = todoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/SnapKit.framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileonux.todoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -512,6 +596,7 @@
 				3567CADD1E4C6F5B00DA28D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3567CADE1E4C6F5B00DA28D8 /* Build configuration list for PBXNativeTarget "todoListTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +605,7 @@
 				3567CAE01E4C6F5B00DA28D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3567CAE11E4C6F5B00DA28D8 /* Build configuration list for PBXNativeTarget "todoListUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +614,7 @@
 				3567CAE31E4C6F5B00DA28D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
